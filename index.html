@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa para ti ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-pattern"></div>
+
+    <div class="card-container">
+
+        <section id="pantalla-1" class="screen active">
+            <img src="images/Heart Love GIF by LINE FRIENDS.gif" alt="Personaje" class="character-img">
+            <h1>FELIZ CUMPLEAÑOS PRECIOSA</h1>
+            <h2>¿QUIERES VER TU SORPRESA?</h2>
+            <div class="buttons">
+                <button id="btn-no-1" class="btn outline">NO GRACIAS</button>
+                <button id="btn-si-1" class="btn outline">SÍ PORFAVOR</button>
+            </div>
+        </section>
+
+        <section id="pantalla-2" class="screen hidden">
+            <img src="images/Tata2.gif" alt="Personaje" class="character-img">
+            <h1>POR FAVOR, TE GUSTARÁ!!</h1>
+            <h2>DI QUE SÍ PORFAVOR</h2>
+            <div class="buttons">
+                <button id="btn-si-2" class="btn solid">SÍ</button>
+            </div>
+        </section>
+
+        <section id="pantalla-menu" class="screen hidden">
+            <h1>SORPRESAAA MI AMOOR!!!</h1>
+            <h2>HAZ CLICK EN CADA UNO</h2>
+            <div class="hearts-container">
+                <button class="heart-btn" onclick="mostrarPantalla('pantalla-mensajes')">
+                    <img src="Images/Tata3.gif" alt="Corazón 1">
+                </button>
+                <button class="heart-btn" onclick="mostrarPantalla('pantalla-playlist')">
+                    <img src="Images/Tata3.gif" alt="Corazón 2">
+                </button>
+                <button class="heart-btn" onclick="mostrarPantalla('pantalla-fotos')">
+                    <img src="Images/Tata3.gif" alt="Corazón 3">
+                </button>
+                <button class="heart-btn" onclick="mostrarPantalla('pantalla-carta')">
+                    <img src="Images/Tata3.gif" alt="Corazón 4">
+                </button>
+            </div>
+        </section>
+
+        <section id="pantalla-mensajes" class="screen hidden">
+            <h1>TODO ESTO ES PARA TI AMOR</h1>
+            <div class="messages-grid">
+                <div class="msg-bubble">Mi Karlita Preciosa y Maravillosa ♥️</div>
+                <div class="msg-bubble">Eres Mi niña de ojitos maravillosos y precioso 🥰</div>
+                <div class="msg-bubble">Te amoooo con todo mi coreazoncito Mi CHokis preciosa 💜</div>
+                </div>
+            <button class="btn solid btn-volver" onclick="mostrarPantalla('pantalla-menu')">Volver</button>
+        </section>
+
+        <section id="pantalla-playlist" class="screen hidden">
+            <h1>NUESTRA PLAYLIST</h1>
+            <div class="spotify-container">
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3PSphgtN8Z1G3j2T9p2Q9n?utm_source=generator&si=cf9372894b2c444c" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <button class="btn solid btn-volver" onclick="mostrarPantalla('pantalla-menu')">Volver</button>
+        </section>
+
+        <section id="pantalla-fotos" class="screen hidden">
+            <h1>MIS FOTOS FAVORITAS</h1>
+            <div class="photos-gallery">
+                <div class="polaroid"><img src="images/IMG_3429.jpg" alt="Foto 1"></div>
+                <div class="polaroid"><img src="images/IMG_3430.jpg" alt="Foto 2"></div>
+                <div class="polaroid"><img src="images/IMG_3542.jpg" alt="Foto 3"></div>
+                <div class="polaroid"><img src="images/IMG_3562.jpg" alt="Foto 4"></div>
+            </div>
+            <button class="btn solid btn-volver" onclick="mostrarPantalla('pantalla-menu')">Volver</button>
+        </section>
+
+        <section id="pantalla-carta" class="screen hidden">
+            <h1>TE DEDICO ESTO MI NIÑA</h1>
+            <div class="letter-content">
+                <p>Mi Karlita Preciosa y Maravillosa ♥️, amor de mi vida, dueña de mi corazón bonito y precioso.</p>
+                <p>En este pequeño detalle quiero expresarte cuánto te amo y cuán afortunado me siento teniendo a una persona tan especial en mi vida.♥️💕</p>
+                <p>Lo muy agradecido estoy de tenerte en mi vida. Gracias por ser la novia más maravillosa del mundo entero mi amorcito💜🥰</p>
+
+            </div>
+            <button class="btn solid btn-volver" onclick="mostrarPantalla('pantalla-menu')">Volver</button>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
